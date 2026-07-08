@@ -187,9 +187,9 @@ app.use(errorHandler);
 // 10. START SERVER
 // ──────────────────────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
-const HOST = process.env.HOST || '0.0.0.0';
+const HOST = process.env.HOST || '0.0.0.0'; // <-- ADD THIS LINE
 
-const server = app.listen(PORT, HOST, () => {
+const server = app.listen(PORT, HOST, () => { // <-- MODIFIED: added HOST
   console.log('══════════════════════════════════════════════════════');
   console.log('🚀 Project LOOP API Server');
   console.log(`📡 Listening on: http://${HOST}:${PORT}`);
