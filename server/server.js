@@ -30,6 +30,8 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
   'http://localhost:5000',
+  'https://loop-pro.netlify.app',
+  'https://loop-project-rqkr.onrender.com',
   process.env.CLIENT_URL,
   /\.netlify\.app$/,
   /\.onrender\.com$/
